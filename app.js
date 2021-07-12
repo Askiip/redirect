@@ -11,3 +11,7 @@ app.get("/", (req, res)=>{
     res.send("arrivee sur la page :)");
 });
 
+app.get("/locali", (req, res)=>{
+    res.send("lat=49.234, long=2.123");
+});
+
