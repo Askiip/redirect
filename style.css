@@ -1,0 +1,44 @@
+table {
+    overflow-x: scroll;
+  }
+  
+  th {
+    white-space: nowrap;
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  .cell-id {
+    text-align: left;
+  }
+  
+  .tooltip-inner {
+    max-width: 400px;
+  }
+  
+  .modal-backdrop {
+    opacity: 0.2 !important;
+  }
+  .kahina-bg {
+    background-image: url("./assets/fond.png");
+    position: absolute;
+    min-height: 100%;
+    left: 0;
+  }
+  
+  .kahina-fond {
+    background-image: url("./assets/fond.png");
+  }
+  
+  .rounded {
+    border-radius: 1rem !important;
+  }
+  
+  #layout_buttons {
+    position: fixed;
+    right: 0;
+    bottom: 5%;
+  }
+  
