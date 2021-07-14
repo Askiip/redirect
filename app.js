@@ -8,7 +8,7 @@ app.listen(port, ()=>{
     console.log("done");
 });
 
-const directory = '/' + (process.env.STATIC_DIR || 'dist')
+var directory = '/' + (process.env.STATIC_DIR || 'dist')
 app.use(express.static(__dirname + directory));
 
 /*app.get("/", (req, res)=>{
