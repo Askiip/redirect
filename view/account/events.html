@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid p-0 kahina-fond">
+      <div class="modal" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"></h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <span class="navbar-brand vertical-align-center" href="#"
+          ><img
+            src="../assets/kahina-logo.png"
+            width="150"
+            height="70"
+            class="d-inline-block align-top"
+            alt=""
+        /></span>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Mes Informations </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./events.html"
+              >Mes événements<span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+        <button class="btn btn-danger ml-auto" onClick="disconnect()">
+          Logout
+        </button>
+      </nav>
+      <div class="row px-4">
+        <h2>Mes événements</h2>
+      </div>
+      <div class="justify-content-center">
+        <div class="card border rounded px-4">
+          <div class="card-body">
+            <div class="row mb-2">
+              <div class="ml-auto">
+                <input type="text" placeholder="Search ..." />
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-striped border" id="data_table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Enregistrement Audio</th>
+                    <th scope="col">Géolocalisation</th>
+                  </tr>
+                </thead>
+                <tbody id="table_content"></tbody>
+              </table>
+            </div>
+            <div id="pages" class="row">
+              <div class="ml-auto"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/text/javascript"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./data_format.js"></script>
+    <script>
+      function disconnect() {
+        window.location.replace("./index.html");
+      }
+    </script>
+  </body>
+</html>
