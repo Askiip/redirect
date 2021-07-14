@@ -1,3 +1,13 @@
+const express = require('express')
+const viewFiles = express.Router()
+
+viewFiles.get('', async(req, res) => {
+  res.render('files')
+})
+
+module.exports = viewFiles
+
+/*
 // Liste des comptes utilisateurs ENDUR
 const allowed_users = [
   {
@@ -203,4 +213,4 @@ function register() {
       );
     }
   }
-}
+}*/
