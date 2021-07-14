@@ -2,7 +2,7 @@ const express = require('express')
 const viewFiles = express.Router()
 
 viewFiles.get('', async(req, res) => {
-  res.render('home')
+  res.render('home.ejs')
 })
 
 module.exports = viewFiles
