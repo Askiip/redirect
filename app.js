@@ -2,12 +2,14 @@ const express = require("express");
 const app = express();
 const port = process.env.port || 3000;
 
-const directory = '/' + (process.env.STATIC_DIR || 'dist')
-app.use(express.static(__dirname + directory));
+
 
 app.listen(port, ()=>{
     console.log("done");
 });
+
+const directory = '/' + (process.env.STATIC_DIR || 'dist')
+app.use(express.static(__dirname + directory));
 
 /*app.get("/", (req, res)=>{
     res.send("arrivee sur la page :)");
